@@ -1,0 +1,46 @@
+<div class="container-1">
+  <div class="container-1-first">
+    <div class="container-header">
+      <h4>Coordinates</h4>
+    </div>
+    <div class="container-sub-body">
+      <div class="container-sub-body-data">
+        <label>Longitude</label>
+        <span>{{coordinates.longitude }}</span>
+      </div>
+      <div class="container-sub-body-data">
+        <label>Latitude</label>
+        <span>{{coordinates.latitude }}</span>
+      </div>
+    </div>
+    <div class="container-sub-body">
+      <div class="container-sub-body-data">
+        <button class="btnSubmit" value="Display Weather" (click)="showWeatherForecast()">Get Weather Details</button>
+      </div>
+      <div class="container-sub-body-data">
+        <button class="btnSubmit" (click)="showWeatherForecast()">Get Random Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-2-second">
+    <div class="container-header">
+      <h4>Weather details</h4>
+    </div>
+    <div class="container-sub-body">
+      <div class="container-sub-body-data">
+        <label>Today's Forecast</label>
+        <span>{{forecast.weather[0].description }}</span>
+      </div>
+      <div class="container-sub-body-data">
+        <label>Temperature</label>
+        <span>{{forecast.main.temp }}</span>
+      </div>
+      <div class="container-sub-body-data">
+        <label>Humidity</label>
+        <span>{{forecast.main.humidity }}</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
